@@ -37,12 +37,12 @@ You can return the answer in any order.
 
 ## Answer 1
 
-Brute Force.
+Brute force.
 
 [See the Answer](ans.py)
 
 ## Answer 2
 
-Hash Map.
+Hash map.
 
 [See the Answer](ans2.py)
