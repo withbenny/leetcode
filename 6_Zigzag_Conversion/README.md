@@ -35,7 +35,7 @@ P     I
 **Example 3:**
 
 >**Input:** s = "A", numRows = 1 \
->**Output:** "A" \
+>**Output:** "A"
 
 **Constraints:**
 
