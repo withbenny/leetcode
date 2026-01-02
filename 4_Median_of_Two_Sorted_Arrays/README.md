@@ -27,7 +27,7 @@ The overall run time complexity should be `O(log (m+n))`.
 * `1 <= m + n <= 2000`
 * `-106 <= nums1[i], nums2[i] <= 106`
 
-[See the Original](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+[See the original page](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 
 # My Answers:
 

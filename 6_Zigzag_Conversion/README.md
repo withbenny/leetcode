@@ -45,7 +45,7 @@ P     I
 
 * `1 <= numRows <= 1000`
 
-[See the Original](https://leetcode.com/problems/zigzag-conversion/)
+[See the original page](https://leetcode.com/problems/zigzag-conversion/)
 
 # My Answers:
 

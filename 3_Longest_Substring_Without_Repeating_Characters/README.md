@@ -28,7 +28,7 @@ Given a string `s`, find the length of the **longest** substring without duplica
 * `0 <= s.length <= 5 * 104`
 * `s` consists of English letters, digits, symbols and spaces.
 
-[See the Original](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+[See the original page](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
 # My Answers:
 
