@@ -30,4 +30,6 @@ $-2^{31} <= x <= 2^{31}$
 
 # My Answer:
 
-See the Answer: [ans.py]
+## Answer
+
+[See the Answer](ans.py)
