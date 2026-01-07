@@ -9,7 +9,7 @@ class Solution:
         n = len(nums)
         result = []
 
-        for i in range(0, n):
+        for i in range(n):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
             if nums[i] > 0:

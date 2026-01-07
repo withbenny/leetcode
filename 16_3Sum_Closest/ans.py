@@ -6,7 +6,7 @@ class Solution:
         n = len(nums)
         result = nums[0] + nums[1] + nums[2]
         
-        for i in range(0, n):
+        for i in range(n):
             j = i + 1
             k = n - 1
 
