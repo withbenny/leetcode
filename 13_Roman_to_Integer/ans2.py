@@ -6,8 +6,7 @@ class Solution:
         }
 
         total = 0
-        n = len(s)
-        for i in range(n):
+        for i in range(len(s)):
             value = roman_map[s[i]]
 
             if i < n - 1 and value < roman_map[s[i + 1]]:
