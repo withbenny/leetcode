@@ -8,14 +8,14 @@ If there is no common prefix, return an empty string `""`.
 
 **Example 1:**
 
->**Input:** strs = ["flower","flow","flight"] \
->**Output:** "fl"
+>Input: strs = [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;] \
+>Output: &quot;fl&quot;
 
 **Example 2:**
 
->**Input:** strs = ["dog","racecar","car"] \
->**Output:** "" \
->**Explanation:** There is no common prefix among the input strings.
+>Input: strs = [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;] \
+>Output: &quot;&quot; \
+>Explanation: There is no common prefix among the input strings.
 
 **Constraints:**
 
@@ -23,22 +23,18 @@ If there is no common prefix, return an empty string `""`.
 * `0 <= strs[i].length <= 200`
 * `strs[i]` consists of only lowercase English letters if it is non-empty.
 
+[See the original page](https://leetcode.com/problems/longest-common-prefix/)
+
 # My Answers:
 
 ## Answer 1
-
-Simple implementation.
 
 [See the Answer](ans.py)
 
 ## Answer 2
 
-Binary Search.
-
 [See the Answer](ans2.py)
 
 ## Answer 3
-
-Divide and conquer.
 
 [See the Answer](ans3.py)

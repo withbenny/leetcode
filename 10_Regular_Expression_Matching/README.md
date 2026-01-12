@@ -4,29 +4,29 @@
 
 Given an input string `s` and a pattern `p`, implement regular expression matching with support for `'.'` and `'*'` where:
 
-* `'.'` Matches any single character.
+	* `'.'` Matches any single character.​​​​
 
-* `'*'` Matches zero or more of the preceding element.
+	* `'*'` Matches zero or more of the preceding element.
 
 The matching should cover the **entire** input string (not partial).
 
 **Example 1:**
 
->**Input:** s = "aa", p = "a" \
->**Output:** false \
->**Explanation:** "a" does not match the entire string "aa".
+>Input: s = &quot;aa&quot;, p = &quot;a&quot; \
+>Output: false \
+>Explanation: &quot;a&quot; does not match the entire string &quot;aa&quot;.
 
 **Example 2:**
 
->**Input:** s = "aa", p = "a*" \
->**Output:** true \
->**Explanation:** '\*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+>Input: s = &quot;aa&quot;, p = &quot;a*&quot; \
+>Output: true \
+>Explanation: &#39;*&#39; means zero or more of the preceding element, &#39;a&#39;. Therefore, by repeating &#39;a&#39; once, it becomes &quot;aa&quot;.
 
 **Example 3:**
 
->**Input:** s = "ab", p = ".\*" \
->**Output:** true \
->**Explanation:** ".\*" means "zero or more (\*) of any character (.)".
+>Input: s = &quot;ab&quot;, p = &quot;.*&quot; \
+>Output: true \
+>Explanation: &quot;.*&quot; means &quot;zero or more (*) of any character (.)&quot;.
 
 **Constraints:**
 
@@ -42,12 +42,8 @@ The matching should cover the **entire** input string (not partial).
 
 ## Answer 1
 
-Top-Down Version.
-
 [See the Answer](ans.py)
 
 ## Answer 2
-
-Buttom-Up Version.
 
 [See the Answer](ans2.py)

@@ -4,45 +4,40 @@
 
 The string `"PAYPALISHIRING"` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 
-```
 P   A   H   N
 A P L S I I G
 Y   I   R
-```
+
 And then read line by line: `"PAHNAPLSIIGYIR"`
 
 Write the code that will take a string and make this conversion given a number of rows:
 
->string convert(string s, int numRows);
+string convert(string s, int numRows);
 
 **Example 1:**
 
->**Input:** s = "PAYPALISHIRING", numRows = 3 \
->**Output:** "PAHNAPLSIIGYIR"
+>Input: s = &quot;PAYPALISHIRING&quot;, numRows = 3 \
+>Output: &quot;PAHNAPLSIIGYIR&quot;
 
 **Example 2:**
 
->**Input:** s = "PAYPALISHIRING", numRows = 4 \
->**Output:** "PINALSIGYAHRPI" \
->**Explanation:**
-```
-P     I    N
-A   L S  I G
-Y A   H R
-P     I
-```
+>Input: s = &quot;PAYPALISHIRING&quot;, numRows = 4 \
+>Output: &quot;PINALSIGYAHRPI&quot; \
+>Explanation: \
+>P     I    N \
+>A   L S  I G \
+>Y A   H R \
+>P     I
 
 **Example 3:**
 
->**Input:** s = "A", numRows = 1 \
->**Output:** "A"
+>Input: s = &quot;A&quot;, numRows = 1 \
+>Output: &quot;A&quot;
 
 **Constraints:**
 
 * `1 <= s.length <= 1000`
-
 * `s` consists of English letters (lower-case and upper-case), `','` and `'.'`.
-
 * `1 <= numRows <= 1000`
 
 [See the original page](https://leetcode.com/problems/zigzag-conversion/)
@@ -51,12 +46,8 @@ P     I
 
 ## Answer 1
 
-2D matrix.
-
 [See the Answer](ans.py)
 
 ## Answer 2
-
-List of strings.
 
 [See the Answer](ans2.py)

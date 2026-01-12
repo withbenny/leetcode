@@ -2,23 +2,22 @@
 
 >Medium
 
-Given a string `s`, return *the longest palindromic substring* in `s`.
+Given a string `s`, return *the longest* *palindromic* *substring* in `s`.
 
 **Example 1:**
 
->**Input:** s = "babad" \
->**Output:** "bab" \
->**Explanation:** "aba" is also a valid answer.
+>Input: s = &quot;babad&quot; \
+>Output: &quot;bab&quot; \
+>Explanation: &quot;aba&quot; is also a valid answer.
 
 **Example 2:**
 
->**Input:** s = "cbbd" \
->**Output:** "bb"
-
+>Input: s = &quot;cbbd&quot; \
+>Output: &quot;bb&quot;
 
 **Constraints:**
 
-* `1 <= s.length <= 1000` \
+* `1 <= s.length <= 1000`
 * `s` consist of only digits and English letters.
 
 [See the original page](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -27,12 +26,8 @@ Given a string `s`, return *the longest palindromic substring* in `s`.
 
 ## Answer 1
 
-Brute force.
-
 [See the Answer](ans.py)
 
 ## Answer 2
-
-Expand the center.
 
 [See the Answer](ans2.py)

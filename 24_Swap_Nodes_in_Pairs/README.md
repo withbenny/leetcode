@@ -8,8 +8,7 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 
 >**Input:** head = [1,2,3,4] \
 >**Output:** [2,1,4,3] \
->**Explanation:** \
->![example](swap_ex1.jpg)
+>**Explanation:**
 
 **Example 2:**
 
@@ -18,7 +17,7 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 
 **Example 3:**
 
->**Input:** head  = [1] \
+>**Input:** head = [1] \
 >**Output:** [1]
 
 **Example 4:**
@@ -31,7 +30,9 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 * The number of nodes in the list is in the range `[0, 100]`.
 * `0 <= Node.val <= 100`
 
-# My Answer
+[See the original page](https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+# My Answer:
 
 ## Answer
 

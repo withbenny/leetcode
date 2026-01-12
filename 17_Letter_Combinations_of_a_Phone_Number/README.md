@@ -6,33 +6,29 @@ Given a string containing digits from `2-9` inclusive, return all possible lette
 
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
-![telephone-keypad](1200px-telephone-keypad2svg.png)
-
 **Example 1:**
 
->**Input:** digits = "23" \
->**Output:** ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+>Input: digits = &quot;23&quot; \
+>Output: [&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]
 
 **Example 2:**
 
->**Input:** digits = "2" \
->**Output:** ["a","b","c"]
+>Input: digits = &quot;2&quot; \
+>Output: [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]
 
 **Constraints:**
 
 * `1 <= digits.length <= 4`
 * `digits[i]` is a digit in the range `['2', '9']`.
 
-# My Answers
+[See the original page](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+
+# My Answers:
 
 ## Answer 1
-
-Simple implementation.
 
 [See the Answer](ans.py)
 
 ## Answer 2
-
-Backtracing.
 
 [See the Answer](ans2.py)
