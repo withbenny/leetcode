@@ -16,7 +16,7 @@ After you are done **modifying the input array,** return *the new length of the 
 
 You must write an algorithm that uses only constant extra space.
 
-**Note: **The characters in the array beyond the returned length do not matter and should be ignored.
+**Note:** The characters in the array beyond the returned length do not matter and should be ignored.
 
 **Example 1:**
 
