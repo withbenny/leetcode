@@ -6,6 +6,7 @@ Given the `head` of a linked list, remove the `n^th` node from the end of the li
 
 **Example 1:**
 
+>![image_1](image_1.jpg) \
 >Input: head = [1,2,3,4,5], n = 2 \
 >Output: [1,2,3,5]
 
