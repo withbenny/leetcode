@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from collections import deque
 
 # Definition for a binary tree node.
@@ -79,29 +79,27 @@ def _display_aux(node):
     zipped_lines = [a + u * ' ' + b for a, b in zip(left, right)]
     return [first_line, second_line] + zipped_lines, n + m + u, max(p, q) + 2, n + u // 2
 
-
 class Solution:
-    def longestZigZag(self, root: Optional[TreeNode]) -> int:
-        self.result = 0
-
-        def dfs(node, left, length):
-            if not node:
-                return 0
-            
-            self.result = max(self.result, length)
-
-            if left:
-                dfs(node.left, False, length + 1)
-                dfs(node.right, True, 1)
-            else:
-                dfs(node.right, True, length + 1)
-                dfs(node.left, False, 1)
-            
-        dfs(root, True, 0)
-        dfs(root, False, 0)
-        return self.result
+    def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        q = deque()
+        q.append(root)
+        
+        while q:
+            right = None
+            for _ in range(len(q)):
+                node = q.popleft()
+                if node:
+                    if right is None:
+                        right = node
+                    q.append(node.right)
+                    q.append(node.left)
+            if right:
+                result.append(right.val)
+        
+        return result
 
 if __name__ == "__main__":
     sol = Solution()
-    root = build_tree([1,None,1,1,1,None,None,1,1,None,1,None,None,None,1])
-    print(sol.longestZigZag(root))
+    root = build_tree([1,2,3,4,None,None,None,5])
+    print(sol.rightSideView(root))

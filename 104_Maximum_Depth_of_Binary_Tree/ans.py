@@ -81,9 +81,11 @@ def _display_aux(node):
 
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 
 if __name__ == "__main__":
     sol = Solution()
-    root = [3,9,20,None,None,15,7]
+    root = build_tree([3,9,20,None,None,15,7])
     print(sol.maxDepth(root))
