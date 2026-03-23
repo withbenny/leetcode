@@ -80,20 +80,20 @@ def _display_aux(node):
     return [first_line, second_line] + zipped_lines, n + m + u, max(p, q) + 2, n + u // 2
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         result = []
-        def inorder(root):
+        def preorder(root):
             if not root:
                 return
-
-            inorder(root.left)
+            
             result.append(root.val)
-            inorder(root.right)
-
-        inorder(root)
-        return  result
+            preorder(root.left)
+            preorder(root.right)
+        
+        preorder(root)
+        return result
 
 if __name__ == "__main__":
     sol = Solution()
     root = build_tree([1,None,2,3])
-    print(sol.inorderTraversal(root))
+    print(sol.preorderTraversal(root))
