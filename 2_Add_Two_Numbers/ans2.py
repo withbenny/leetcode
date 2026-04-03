@@ -1,13 +1,17 @@
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
+
 class Solution:
-    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def addTwoNumbers(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         dummy = ListNode(0)
         current = dummy
         carry = 0
@@ -38,12 +42,14 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+
 def print_linked_list(node):
     result = []
     while node:
         result.append(str(node.val))
         node = node.next
     print(" -> ".join(result))
+
 
 if __name__ == "__main__":
     sol = Solution()

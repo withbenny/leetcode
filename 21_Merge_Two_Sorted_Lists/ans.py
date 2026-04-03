@@ -1,13 +1,17 @@
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
+
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    def mergeTwoLists(
+        self, list1: Optional[ListNode], list2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         dummy = ListNode(-1)
         current = dummy
 
@@ -28,6 +32,7 @@ class Solution:
 
         return dummy.next
 
+
 def create_linked_list(arr):
     dummy = ListNode(0)
     current = dummy
@@ -36,6 +41,7 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+
 def print_linked_list(node):
     result = []
     while node:
@@ -43,8 +49,9 @@ def print_linked_list(node):
         node = node.next
     print(" -> ".join(result))
 
+
 if __name__ == "__main__":
     sol = Solution()
-    list1 = create_linked_list([1,2,4])
-    list2 = create_linked_list([1,3,4])
+    list1 = create_linked_list([1, 2, 4])
+    list2 = create_linked_list([1, 3, 4])
     print_linked_list(sol.mergeTwoLists(list1, list2))

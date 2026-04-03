@@ -1,10 +1,12 @@
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -31,6 +33,7 @@ class Solution:
 
         return odd.next
 
+
 def create_linked_list(arr):
     dummy = ListNode(0)
     current = dummy
@@ -39,6 +42,7 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+
 def print_linked_list(node):
     result = []
     while node:
@@ -46,7 +50,8 @@ def print_linked_list(node):
         node = node.next
     print(" -> ".join(result))
 
+
 if __name__ == "__main__":
     sol = Solution()
-    head = create_linked_list([2,1,3,5,6,4,7])
+    head = create_linked_list([2, 1, 3, 5, 6, 4, 7])
     print_linked_list(sol.oddEvenList(head))

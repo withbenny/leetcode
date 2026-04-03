@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
         total = sum(nums)
@@ -14,6 +15,7 @@ class Solution:
             left += nums[i]
 
         return -1
+
 
 if __name__ == "__main__":
     sol = Solution()

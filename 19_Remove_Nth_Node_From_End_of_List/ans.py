@@ -1,10 +1,12 @@
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
@@ -25,6 +27,7 @@ class Solution:
 
         return head
 
+
 def create_linked_list(arr):
     dummy = ListNode(0)
     current = dummy
@@ -33,12 +36,14 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+
 def print_linked_list(node):
     result = []
     while node:
         result.append(str(node.val))
         node = node.next
     print(" -> ".join(result))
+
 
 if __name__ == "__main__":
     sol = Solution()

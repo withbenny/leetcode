@@ -12,6 +12,7 @@ class Solution:
         else:
             return False
 
+
 if __name__ == "__main__":
     sol = Solution()
     s = "acb"

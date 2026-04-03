@@ -36,7 +36,7 @@ class Solution:
         return sign * out
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sol = Solution()
     s = "   -042"
     print(sol.myAtoi(s))

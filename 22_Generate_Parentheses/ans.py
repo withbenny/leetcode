@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         s = ""
@@ -17,6 +18,7 @@ class Solution:
 
         _dfs(0, 0, s)
         return result
+
 
 if __name__ == "__main__":
     sol = Solution()

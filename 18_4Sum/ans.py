@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
         nums.sort()
@@ -35,8 +36,9 @@ class Solution:
 
         return result
 
+
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1,0,-1,0,-2,2]
+    nums = [1, 0, -1, 0, -2, 2]
     target = 0
     print(sol.fourSum(nums, target))

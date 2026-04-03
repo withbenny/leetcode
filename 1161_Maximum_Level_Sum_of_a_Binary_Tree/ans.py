@@ -1,12 +1,14 @@
 from typing import Optional, List
 from collections import deque
 
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
+
 
 def build_tree(values):
     if not values:
@@ -32,14 +34,16 @@ def build_tree(values):
 
     return root
 
+
 def print_tree(node):
     lines, _, _, _ = _display_aux(node)
     for line in lines:
         print(line)
 
+
 def _display_aux(node):
     if node.right is None and node.left is None:
-        line = '%s' % node.val
+        line = "%s" % node.val
         width = len(line)
         height = 1
         middle = width // 2
@@ -47,43 +51,49 @@ def _display_aux(node):
 
     if node.right is None:
         lines, n, p, x = _display_aux(node.left)
-        s = '%s' % node.val
+        s = "%s" % node.val
         u = len(s)
-        first_line = (x + 1) * ' ' + (n - x - 1) * '_' + s
-        second_line = x * ' ' + '/' + (n - x - 1 + u) * ' '
-        shifted_lines = [line + u * ' ' for line in lines]
+        first_line = (x + 1) * " " + (n - x - 1) * "_" + s
+        second_line = x * " " + "/" + (n - x - 1 + u) * " "
+        shifted_lines = [line + u * " " for line in lines]
         return [first_line, second_line] + shifted_lines, n + u, p + 2, n + u // 2
 
     if node.left is None:
         lines, n, p, x = _display_aux(node.right)
-        s = '%s' % node.val
+        s = "%s" % node.val
         u = len(s)
-        first_line = s + x * '_' + (n - x) * ' '
-        second_line = (u + x) * ' ' + '\\' + (n - x - 1) * ' '
-        shifted_lines = [u * ' ' + line for line in lines]
+        first_line = s + x * "_" + (n - x) * " "
+        second_line = (u + x) * " " + "\\" + (n - x - 1) * " "
+        shifted_lines = [u * " " + line for line in lines]
         return [first_line, second_line] + shifted_lines, n + u, p + 2, u // 2
 
     left, n, p, x = _display_aux(node.left)
     right, m, q, y = _display_aux(node.right)
-    s = '%s' % node.val
+    s = "%s" % node.val
     u = len(s)
-    
-    first_line = (x + 1) * ' ' + (n - x - 1) * '_' + s + y * '_' + (m - y) * ' '
-    second_line = x * ' ' + '/' + (n - x - 1 + u + y) * ' ' + '\\' + (m - y - 1) * ' '
-    
+
+    first_line = (x + 1) * " " + (n - x - 1) * "_" + s + y * "_" + (m - y) * " "
+    second_line = x * " " + "/" + (n - x - 1 + u + y) * " " + "\\" + (m - y - 1) * " "
+
     if p < q:
-        left += [n * ' '] * (q - p)
+        left += [n * " "] * (q - p)
     elif q < p:
-        right += [m * ' '] * (p - q)
-        
-    zipped_lines = [a + u * ' ' + b for a, b in zip(left, right)]
-    return [first_line, second_line] + zipped_lines, n + m + u, max(p, q) + 2, n + u // 2
+        right += [m * " "] * (p - q)
+
+    zipped_lines = [a + u * " " + b for a, b in zip(left, right)]
+    return (
+        [first_line, second_line] + zipped_lines,
+        n + m + u,
+        max(p, q) + 2,
+        n + u // 2,
+    )
+
 
 class Solution:
     def maxLevelSum(self, root: Optional[TreeNode]) -> int:
         q = deque([root])
         level = best_level = 1
-        best_sum = float('-inf')
+        best_sum = float("-inf")
 
         while q:
             level_size = len(q)
@@ -106,7 +116,8 @@ class Solution:
 
         return best_level
 
+
 if __name__ == "__main__":
     sol = Solution()
-    root = build_tree([1,7,0,7,-8,None,None])
+    root = build_tree([1, 7, 0, 7, -8, None, None])
     print(sol.maxLevelSum(root))

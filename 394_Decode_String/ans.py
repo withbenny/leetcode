@@ -19,6 +19,7 @@ class Solution:
 
         return c_str
 
+
 if __name__ == "__main__":
     sol = Solution()
     s = "3[a]2[bc]"

@@ -3,7 +3,10 @@ class Solution:
         cnt1 = Counter(word1)
         cnt2 = Counter(word2)
 
-        return (cnt1.keys() == cnt2.keys() and sorted(cnt1.values()) == sorted(cnt2.values()))
+        return cnt1.keys() == cnt2.keys() and sorted(cnt1.values()) == sorted(
+            cnt2.values()
+        )
+
 
 if __name__ == "__main__":
     sol = Solution()

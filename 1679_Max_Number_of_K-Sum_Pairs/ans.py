@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maxOperations(self, nums: List[int], k: int) -> int:
         nums.sort()
@@ -16,11 +17,12 @@ class Solution:
                 right -= 1
             else:
                 left += 1
-        
+
         return count
+
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1,2,3,4]
+    nums = [1, 2, 3, 4]
     k = 5
     print(sol.maxOperations(nums, k))

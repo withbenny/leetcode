@@ -13,6 +13,7 @@ class Solution:
 
         return max_vowels
 
+
 if __name__ == "__main__":
     sol = Solution()
     s = "weallloveyou"

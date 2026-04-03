@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Solution:
     def predictPartyVictory(self, senate: str) -> str:
         r, d = deque(), deque()
@@ -21,6 +22,7 @@ class Solution:
                 d.append(d_idx + n)
 
         return "Radiant" if r else "Dire"
+
 
 if __name__ == "__main__":
     sol = Solution()

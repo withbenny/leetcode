@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         n = len(nums)
@@ -13,7 +14,8 @@ class Solution:
 
         return result
 
+
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1,2,3,4]
+    nums = [1, 2, 3, 4]
     print(sol.productExceptSelf(nums))

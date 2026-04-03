@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def longestOnes(self, nums: List[int], k: int) -> int:
         left = 0
@@ -17,8 +18,9 @@ class Solution:
 
         return max_len
 
+
 if __name__ == "__main__":
     sol = Solution()
-    nums = [1,1,1,0,0,0,1,1,1,1,0]
+    nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0]
     k = 2
     print(sol.longestOnes(nums, k))

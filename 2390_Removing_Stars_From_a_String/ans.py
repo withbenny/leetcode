@@ -9,6 +9,7 @@ class Solution:
 
         return "".join(result)
 
+
 if __name__ == "__main__":
     sol = Solution()
     s = "leet**cod*e"

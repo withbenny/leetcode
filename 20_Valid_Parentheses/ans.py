@@ -1,9 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        mapping = {
-            ")": "(", "}": "{", "]": "["
-        }
-        
+        mapping = {")": "(", "}": "{", "]": "["}
+
         stack = []
         for char in s:
             if char in mapping.values():
@@ -13,6 +11,7 @@ class Solution:
                     return False
 
         return not stack
+
 
 if __name__ == "__main__":
     sol = Solution()

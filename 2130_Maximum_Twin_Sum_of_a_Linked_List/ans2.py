@@ -1,10 +1,12 @@
 from typing import Optional
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 class Solution:
     def pairSum(self, head: Optional[ListNode]) -> int:
@@ -29,6 +31,7 @@ class Solution:
 
         return result
 
+
 def create_linked_list(arr):
     dummy = ListNode(0)
     current = dummy
@@ -37,6 +40,7 @@ def create_linked_list(arr):
         current = current.next
     return dummy.next
 
+
 def print_linked_list(node):
     result = []
     while node:
@@ -44,7 +48,8 @@ def print_linked_list(node):
         node = node.next
     print(" -> ".join(result))
 
+
 if __name__ == "__main__":
     sol = Solution()
-    head = create_linked_list([4,2,2,3])
+    head = create_linked_list([4, 2, 2, 3])
     print(sol.pairSum(head))

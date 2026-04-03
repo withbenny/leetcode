@@ -18,6 +18,7 @@ class Solution:
 
         return dp(0, 0)
 
+
 if __name__ == "__main__":
     sol = Solution()
     s = "ab"

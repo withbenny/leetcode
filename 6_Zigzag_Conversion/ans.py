@@ -2,7 +2,7 @@ class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1 or numRows >= len(s):
             return s
-        
+
         n = len(s)
         cycle_len = 2 * numRows - 2
         numCol = (n // cycle_len + 1) * (numRows - 1)
@@ -29,15 +29,16 @@ class Solution:
                 else:
                     r -= 1
                     c += 1
-        
+
         result = ""
         for row in a:
             row_str = "".join(row)
             result += row_str
-        
+
         return result
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     sol = Solution()
     s = "PAYPALISHIRING"
     numRows = 3

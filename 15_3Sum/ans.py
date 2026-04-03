@@ -1,10 +1,11 @@
 from typing import List
 
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         if not nums:
             return []
-        
+
         nums.sort()
         n = len(nums)
         result = []
@@ -30,10 +31,11 @@ class Solution:
 
                     while nums[j] == nums[j - 1] and j < k:
                         j += 1
-        
+
         return result
+
 
 if __name__ == "__main__":
     sol = Solution()
-    nums = [-1,0,1,2,-1,-4]
+    nums = [-1, 0, 1, 2, -1, -4]
     print(sol.threeSum(nums))

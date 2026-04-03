@@ -2,7 +2,7 @@ class Solution:
     def reverseVowels(self, s: str) -> str:
         vowels = set("aeiouAEIOU")
         s = list(s)
-        
+
         ind = []
         v = []
         for i, j in enumerate(s):
@@ -16,6 +16,7 @@ class Solution:
             s[m] = n
 
         return "".join(s)
+
 
 if __name__ == "__main__":
     sol = Solution()
